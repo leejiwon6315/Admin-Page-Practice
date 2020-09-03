@@ -1,18 +1,14 @@
 import React, { Component } from "react";
-import {
-  virtualData,
-  nextId,
-  setNextId,
-} from "./components/StockItems/virtualData";
-import StockList from "./components/StockList/StockList";
 import InputBox from "./components/InputBox/InputBox";
+import StockList from "./components/StockList/StockList";
+import { virtualData, nextId, setNextId } from "./virtualData.js";
 
 class App extends Component {
   state = {
     virtualData,
-    name: ``,
-    productNumber: ``,
-    size: ``,
+    name: "",
+    productNumber: "",
+    size: "",
   };
 
   handleInput = (e) => {
@@ -24,12 +20,12 @@ class App extends Component {
   handleSubmit = () => {
     const { virtualData, name, productNumber, size } = this.state;
 
-    if (name === `` || productNumber === `` || size === ``) {
+    if (name === "" || productNumber === "" || size === "") {
       alert(`빠진 부분없이 입력해 주세요`);
       return;
     }
 
-    this.state({
+    this.setState({
       virtualData: {
         ...virtualData,
         [nextId]: {
@@ -39,9 +35,9 @@ class App extends Component {
           size,
         },
       },
-      name: ``,
-      productNumber: ``,
-      size: ``,
+      name: "",
+      productNumber: "",
+      size: "",
     });
 
     setNextId();
@@ -60,6 +56,7 @@ class App extends Component {
           onChange={handleInput}
           onSubmit={handleSubmit}
         />
+
         <StockList list={virtualData} />
       </div>
     );
