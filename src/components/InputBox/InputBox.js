@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./InputBox.module.scss";
 
 const InputBox = ({ name, productNumber, size, onChange, onSubmit }) => {
   return (
-    <div className="container">
+    <>
       <div>
         <input
           type="text"
@@ -10,6 +11,7 @@ const InputBox = ({ name, productNumber, size, onChange, onSubmit }) => {
           name="name"
           onChange={onChange}
           value={name}
+          className={styles.inputBox_input}
         />
       </div>
       <div>
@@ -19,6 +21,7 @@ const InputBox = ({ name, productNumber, size, onChange, onSubmit }) => {
           name="productNumber"
           onChange={onChange}
           value={productNumber}
+          className={styles.inputBox_input}
         />
       </div>
       <div>
@@ -28,10 +31,13 @@ const InputBox = ({ name, productNumber, size, onChange, onSubmit }) => {
           name="size"
           onChange={onChange}
           value={size}
+          className={styles.inputBox_input}
         />
       </div>
-      <button onClick={onSubmit}> 등록 </button>
-    </div>
+      <button className={styles.inputBox_button} onClick={onSubmit}>
+        등록
+      </button>
+    </>
   );
 };
 

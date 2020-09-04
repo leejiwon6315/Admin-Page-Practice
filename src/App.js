@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InputBox from "./components/InputBox/InputBox";
 import StockList from "./components/StockList/StockList";
 import { virtualData, nextId, setNextId } from "./virtualData.js";
+import styles from "./App.module.scss";
 
 class App extends Component {
   state = {
@@ -48,7 +49,7 @@ class App extends Component {
     const { virtualData, name, productNumber, size } = this.state;
 
     return (
-      <div className="container">
+      <div className={styles.container}>
         <InputBox
           name={name}
           productNumber={productNumber}
