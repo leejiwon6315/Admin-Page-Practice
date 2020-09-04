@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import InputBox from "./components/InputBox/InputBox";
+import InputBox from "./components/InputBox";
 import StockList from "./components/StockList/StockList";
 import { virtualData, nextId, setNextId } from "./virtualData.js";
 import styles from "./App.module.scss";
