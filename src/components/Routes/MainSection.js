@@ -35,7 +35,7 @@ const MainSection = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.main_container}>
       <InputBox
         name={name}
         productNumber={productNumber}
@@ -45,7 +45,6 @@ const MainSection = () => {
         onChangeSize={onChangeSize}
         onSubmit={handleSubmit}
       />
-
       <StockList list={data} />
     </div>
   );

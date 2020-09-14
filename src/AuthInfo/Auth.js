@@ -1,6 +1,6 @@
 const usersInfo = [
   // 임시 데이터 베이스
-  { userId: "kingJiwon", password: "qwer1234" },
+  { userId: "kingJiwon", password: "qwer1234", name: "JEEWON" },
 ];
 
 const SignIn = ({ userId, password }) => {

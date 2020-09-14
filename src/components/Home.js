@@ -4,9 +4,8 @@ import Navigation from "./Navigation";
 import MainSection from "./Routes/MainSection";
 import Reservation from "./Routes/Reservation";
 
-const Main = () => {
+const Home = () => {
   // Link를 사용하기 위해서는 Router 태그 내부에 있어야함
-
   return (
     <HashRouter>
       <Navigation />
@@ -17,4 +16,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;
