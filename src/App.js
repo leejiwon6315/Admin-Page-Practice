@@ -1,16 +1,18 @@
 import React from "react";
-// import { HashRouter, Route } from "react-router-dom";
-// import Navigation from "./components/Navigation";
-// import MainSection from "./components/Routes/MainSection";
-// import Reservation from "./components/Routes/Reservation";
-import Login from "./AuthInfo/Login";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import LoginPage from "./AuthInfo/LoginPage";
+import Main from "./components/Main";
 import "./App.module.css";
-import SignIn from "./AuthInfo/Auth";
 
 const App = () => {
-  const login = ({ userId, password }) => SignIn({ userId, password });
-
-  return <Login login={login} />;
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" component={LoginPage} />
+        <Route path="/Home" component={Main} />
+      </Switch>
+    </Router>
+  );
 };
 
 export default App;

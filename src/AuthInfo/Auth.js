@@ -1,12 +1,9 @@
-import React from "react";
-import Main from "../components/Main";
-
 const usersInfo = [
   // 임시 데이터 베이스
   { userId: "kingJiwon", password: "qwer1234" },
 ];
 
-const SignIn = (userId, password) => {
+const SignIn = ({ userId, password }) => {
   const user = usersInfo.find(
     (user) => user.userId === userId && user.password === password
   );
@@ -17,7 +14,7 @@ const SignIn = (userId, password) => {
     return;
   }
 
-  return <Main />;
+  return user;
 };
 
 export default SignIn;
