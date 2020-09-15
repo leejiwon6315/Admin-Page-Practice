@@ -12,7 +12,7 @@ const Navigation = () => {
             <h1 className={styles.title}>Song A Zi</h1>
           </div>
           <div className={styles.navItems}>
-            <Link to="/" className={styles.navItem}>
+            <Link to="/Home" className={styles.navItem}>
               Home
             </Link>
             <Link to="/reservation" className={styles.navItem}>
@@ -20,6 +20,7 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
+
         <button className={styles.logoutBtn}>로그아웃</button>
       </div>
     </div>
