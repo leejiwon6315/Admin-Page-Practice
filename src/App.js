@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoginPage from "./AuthInfo/LoginPage";
-import "./App.module.css";
+import "./App.css";
 import Home from "./components/Home";
 
 const App = () => {

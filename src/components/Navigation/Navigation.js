@@ -5,23 +5,23 @@ import styles from "./Navigation.module.scss";
 const Navigation = () => {
   return (
     <div className={styles.nav}>
-      <div className={styles.navContents}>
+      <div className={styles.nav_contents}>
         <div className={styles.content_front}>
           <div className={styles.logo}>
-            <div className={styles.logoImage}></div>
+            <div className={styles.logo_image}></div>
             <h1 className={styles.title}>Song A Zi</h1>
           </div>
-          <div className={styles.navItems}>
-            <Link to="/Home" className={styles.navItem}>
+          <div className={styles.nav_items}>
+            <Link to="/Home" className={styles.nav_item}>
               Home
             </Link>
-            <Link to="/reservation" className={styles.navItem}>
+            <Link to="/reservation" className={styles.nav_item}>
               Reservation
             </Link>
           </div>
         </div>
 
-        <button className={styles.logoutBtn}>로그아웃</button>
+        <button className={styles.logout_btn}>로그아웃</button>
       </div>
     </div>
   );

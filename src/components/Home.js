@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "./Navigation";
+import SideBar from "./SideBar";
 import MainSection from "./Routes/MainSection";
 import Reservation from "./Routes/Reservation";
 
@@ -10,7 +11,7 @@ const Home = () => {
   return (
     <Router>
       <Navigation />
-
+      <SideBar />
       <Route path="/Home" component={MainSection} />
       <Route path="/reservation" component={Reservation} />
     </Router>

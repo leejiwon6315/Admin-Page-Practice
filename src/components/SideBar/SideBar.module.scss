@@ -1,0 +1,62 @@
+.side_bar_comtainer {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  float: left;
+  width: 10vw;
+  min-width: 250px;
+  height: 90vh;
+  background-color: rgb(92, 90, 211);
+  box-shadow: 0.5px 4px 4px rgba(76, 76, 83, 0.205);
+  margin: 0;
+  color: white;
+
+  .side_bar_profile {
+    position: relative;
+    top: 8%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .side_bar_image {
+      width: 9vw;
+      height: 9vw;
+      min-width: 155px;
+      min-height: 155px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 1px 1px 3px rgba(76, 76, 83, 0.205);
+      cursor: pointer;
+    }
+
+    .side_bar_name {
+      text-align: center;
+      position: relative;
+      top: 20px;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      h4 {
+        position: relative;
+        top: 5px;
+        font-size: 15px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .copyright {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

@@ -12,7 +12,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  .navContents {
+  .nav_contents {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,14 +30,13 @@
         flex-direction: row;
         align-items: center;
 
-        .logoImage {
+        .logo_image {
           width: 50px;
           height: 50px;
           cursor: pointer;
-          margin: 0 20px 0 20px;
-
-          background-color: rgb(16, 15, 66);
-          border-radius: 15px;
+          margin: 0 20px 0 30px;
+          background-color: rgb(92, 90, 211);
+          border-radius: 50%;
         }
 
         .title {
@@ -47,7 +46,7 @@
         }
       }
 
-      .navItems {
+      .nav_items {
         position: relative;
         left: 15%;
         width: fit-content;
@@ -55,7 +54,7 @@
         align-items: center;
         position: relative;
 
-        .navItem {
+        .nav_item {
           text-decoration: none;
           color: rgb(20, 20, 20);
           font-size: 20px;
@@ -65,21 +64,25 @@
         }
       }
     }
-    .logoutBtn {
+    .logout_btn {
       text-decoration: none;
       border: none;
+      outline: none;
       border-radius: 20px;
-      background-color: rgb(230, 230, 230);
+      background-color: rgb(92, 90, 211);
 
-      color: rgb(20, 20, 20);
-      font-size: 16px;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
       font-weight: 300;
-      margin: 0 20px;
+      margin: 0 30px;
       padding: 10px 20px 10px 20px;
       cursor: pointer;
     }
-    .logoutBtn:hover {
-      background-color: rgb(196, 196, 196);
+    .logout_btn:hover {
+      background-color: rgb(116, 114, 231);
+    }
+    .logout_btn:active {
+      transform: scale(0.98);
     }
   }
 }
