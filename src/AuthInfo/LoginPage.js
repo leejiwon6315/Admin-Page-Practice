@@ -35,7 +35,7 @@ const LoginPage = () => {
           <div className={styles.login_guide}></div>
 
           <div className={styles.login_item}>
-            <form className={styles.login_item_content}>
+            <form className={styles.login_item_content} method="post">
               <h1>Welcome to Admin Page!</h1>
               <p className={styles.header_text}>
                 송아지의 서비스를 통해 쉽게 재고와 예약상태를 관리해보세요.

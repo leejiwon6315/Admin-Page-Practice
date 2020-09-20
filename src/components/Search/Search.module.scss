@@ -1,0 +1,39 @@
+.search_container {
+  width: 57vw;
+  float: left;
+
+  .search_item {
+    display: flex;
+    height: 50px;
+    width: 98%;
+    margin: 1% 1% 0 1%;
+
+    input {
+      font-size: 16px;
+      font-weight: 300;
+      border: none;
+      text-align: left;
+      padding-left: 15px;
+      width: 93%;
+      outline: none;
+    }
+
+    .search_button {
+      font-size: 14px;
+      font-weight: 300;
+      width: 50px;
+      height: 50px;
+      align-content: center;
+      border: none;
+      border-style: unset;
+      border-radius: 2px;
+      background-color: rgb(92, 90, 211);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .search_button:hover {
+      background-color: rgb(116, 114, 231);
+    }
+  }
+}

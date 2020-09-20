@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: space-between;
   float: left;
-  width: 10vw;
-  min-width: 250px;
+
+  min-width: 100px;
+  width: 18vw;
   height: 90vh;
   background-color: rgb(92, 90, 211);
   box-shadow: 0.5px 4px 4px rgba(76, 76, 83, 0.205);
@@ -25,8 +26,8 @@
     .side_bar_image {
       width: 9vw;
       height: 9vw;
-      min-width: 155px;
-      min-height: 155px;
+      min-width: 90px;
+      min-height: 90px;
       border-radius: 50%;
       background-color: white;
       box-shadow: 1px 1px 3px rgba(76, 76, 83, 0.205);
