@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./item.module.scss";
 
-const StockItems = ({ name, productNumber, size, price, quantity }) => {
+const StockItems = ({
+  name,
+  productNumber,
+  size,
+  price,
+  quantity,
+  picture,
+}) => {
   return (
     <div className={styles.item_container}>
       <div className={styles.inner_section}>
-        <div className={styles.item_image}></div>
+        <div className={styles.item_image}>{picture}</div>
         <div className={styles.item_contents}>
           <div className={styles.item_attribute}>
             <span className={styles.item_title}>제품명</span>

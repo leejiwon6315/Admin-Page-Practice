@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import styles from "./InputBox.module.scss";
 
@@ -18,6 +19,12 @@ const InputBox = ({
     <div className={styles.inputBox}>
       <div className={styles.inputBox_items}>
         <h1 className={styles.inputBox_title}>제품 등록</h1>
+        <div className={styles.inputBox_file}>
+          <div></div>
+          <button className={styles.inputBox_file_button} onClick={null}>
+            이미지 업로드
+          </button>
+        </div>
         <div className={styles.inputBox_item_wrapper}>
           <div className={styles.inputBox_item}>
             <h2 className={styles.inputBox_subTitle}>제품명</h2>

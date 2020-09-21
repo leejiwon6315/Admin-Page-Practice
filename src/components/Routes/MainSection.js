@@ -1,11 +1,10 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import InputBox from "../InputBox";
 import Search from "../../components/Search";
 import StockList from "../StockList";
 import { virtualData, nextId, setNextId } from "../../lib/virtualData.js";
 import styles from "./MainSection.module.scss";
-import useInput from "../../lib/useInput";
+import useInput from "../InputBox/useInput";
 
 const MainSection = () => {
   const [data, setData] = useState(virtualData);
@@ -38,6 +37,7 @@ const MainSection = () => {
         quantity,
       },
     });
+
     setName("");
     setProductNumber("");
     setSize("");
